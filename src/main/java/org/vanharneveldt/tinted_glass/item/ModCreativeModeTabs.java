@@ -18,11 +18,14 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> TINTED_ITEMS = CREATIVE_MODE_TAB.register("tinted_glass_items_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.MOLTENGLASS.get()))
-                    .title(Component.translatable("creativetab.tintedglassesofdawii.tinted_items"))
+                    .title(Component.translatable("creativetab.revampedglass.tinted_items"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
                                 output.accept(ModItems.GLASSSHARDS);
                                 output.accept(ModItems.MOLTENGLASS);
+                                output.accept(ModItems.GLASSPIECE);
+                                output.accept(ModItems.RAWALUMINIUM);
+                                output.accept(ModItems.ALUMINIUMINGOT);
                             }
                     ).build());
 
@@ -30,10 +33,12 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.SMILEPUMPKIN.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "tinted_glass_items_tab"))
-                    .title(Component.translatable("creativetab.tintedglassesofdawii.tinted_blocks"))
+                    .title(Component.translatable("creativetab.revampedglass.tinted_blocks"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
                                 output.accept(ModBlocks.SMILEPUMPKIN);
+                                output.accept(ModBlocks.ALUMINIUMORE);
+                                output.accept(ModBlocks.DEEPSLATEALUMINIUMORE);
                             }
                     ).build());
 

@@ -26,7 +26,7 @@ import org.vanharneveldt.tinted_glass.item.ModItems;
 public class TintedGlass
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tintedglassesofdawii";
+    public static final String MOD_ID = "revampedglass";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -63,14 +63,7 @@ public class TintedGlass
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GLASSSHARDS);
-            event.accept(ModItems.MOLTENGLASS);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
-            event.accept(ModBlocks.SMILEPUMPKIN);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

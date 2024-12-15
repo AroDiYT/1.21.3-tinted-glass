@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tintedglassesofdawii:item/glasspiece"
+    "layer0": "revampedglass:item/raw_aluminium"
   }
 }

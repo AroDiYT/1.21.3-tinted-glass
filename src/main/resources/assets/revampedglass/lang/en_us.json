@@ -1,0 +1,16 @@
+{
+  "item.revampedglass.glassshards": "Glass Shards",
+  "item.revampedglass.glasspiece": "Glass Piece",
+  "item.revampedglass.moltenglass": "Molten Glass",
+  "item.revampedglass.raw_aluminium": "Raw Aluminium",
+  "item.revampedglass.aluminium_ingot": "Aluminium Ingot",
+
+
+  "block.revampedglass.smilepumpkin": "Smiley Pumpkin",
+  "block.revampedglass.aluminium_ore": "Aluminium Ore",
+  "block.revampedglass.deepslate_aluminium_ore": "Deepslate Aluminium Ore",
+
+
+  "creativetab.revampedglass.tinted_items": "Tinted Glass Items",
+  "creativetab.revampedglass.tinted_blocks": "Tinted Glass Blocks"
+}

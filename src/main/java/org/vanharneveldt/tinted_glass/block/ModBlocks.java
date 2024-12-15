@@ -24,11 +24,28 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GILDED_BLACKSTONE)
                     .setId(
-                        ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("org.vanharneveldt.tinted_glass", "smilepumpkin"))
+                        ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "smilepumpkin"))
+                    )));
+    public static final DeferredBlock<Block> ALUMINIUMORE = registerBlock("aluminium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .setId(
+                        ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_ore"))
+                    )));
+
+    public static final DeferredBlock<Block> DEEPSLATEALUMINIUMORE = registerBlock("deepslate_aluminium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)
+                    .setId(
+                            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "deepslate_aluminium_ore"))
                     )));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
-        DeferredBlock<T> toReturn = BLOCKS.register("smilepumpkin", block);
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
