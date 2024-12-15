@@ -9,8 +9,9 @@ import org.vanharneveldt.tinted_glass.TintedGlass;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TintedGlass.MOD_ID);
 
-    public static final DeferredItem<Item> GLASSSHARD = ITEMS.register("glassshard",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GLASSSHARDS = ITEMS.registerSimpleItem("glassshards");
+    public static final DeferredItem<Item> MOLTENGLASS = ITEMS.registerSimpleItem("moltenglass");
+    public static final DeferredItem<Item> GLASSPIECE = ITEMS.registerSimpleItem("glasspiece");
 
 
 

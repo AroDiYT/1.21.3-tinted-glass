@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tintedglassesofdawii:item/glassshard"
+    "layer0": "tintedglassesofdawii:item/moltenglass"
   }
 }

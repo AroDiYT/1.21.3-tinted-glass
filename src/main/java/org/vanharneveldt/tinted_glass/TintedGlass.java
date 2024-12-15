@@ -17,6 +17,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.vanharneveldt.tinted_glass.block.ModBlocks;
+import org.vanharneveldt.tinted_glass.item.ModCreativeModeTabs;
 import org.vanharneveldt.tinted_glass.item.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -41,7 +43,10 @@ public class TintedGlass
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -59,7 +64,12 @@ public class TintedGlass
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GLASSSHARD);
+            event.accept(ModItems.GLASSSHARDS);
+            event.accept(ModItems.MOLTENGLASS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+            event.accept(ModBlocks.SMILEPUMPKIN);
         }
     }
 
