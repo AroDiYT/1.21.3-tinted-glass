@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "glass",
+  "ingredient": "revampedglass:glassshards",
+  "result": {
+    "count": 1,
+    "id": "revampedglass:moltenglass"
+  }
+}

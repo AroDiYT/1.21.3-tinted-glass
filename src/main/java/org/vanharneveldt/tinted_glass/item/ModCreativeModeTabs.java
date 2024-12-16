@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.DEEPSLATEALUMINIUMORE);
                                 output.accept(ModBlocks.ALUMINIUMCOBBLESTONE);
                                 output.accept(ModBlocks.ALUMINIUMBLOCK);
+                                output.accept(ModBlocks.SYLVANNETHERRACKORE);
                             }
                     ).build());
 

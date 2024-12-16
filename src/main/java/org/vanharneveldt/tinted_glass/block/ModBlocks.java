@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -18,6 +19,16 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TintedGlass.MOD_ID);
 
+    public static final DeferredBlock<Block> SYLVANNETHERRACKORE = registerBlock("sylvan_netherrack_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERRACK)
+                    .setId(
+                            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "sylvan_netherrack_ore"))
+                    )));
+
+
     public static final DeferredBlock<Block> ALUMINIUMBLOCK = registerBlock("aluminium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f)
@@ -27,6 +38,7 @@ public class ModBlocks {
                             ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_block"))
                     )));
 
+
     public static final DeferredBlock<Block> ALUMINIUMCOBBLESTONE = registerBlock("aluminium_cobblestone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f)
@@ -35,6 +47,11 @@ public class ModBlocks {
                     .setId(
                             ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_cobblestone"))
                     )));
+
+    public static final DeferredBlock<StairBlock> ALUMINIUMCOBBLESTONESTAIRS = registerBlock("aluminium_cobblestone_stairs",
+            () -> new StairBlock(ModBlocks.ALUMINIUMCOBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_cobblestone_stairs")))
+                            .strength(2f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> SMILEPUMPKIN = registerBlock("smilepumpkin",
             () -> new Block(BlockBehaviour.Properties.of()

@@ -75,10 +75,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> ALUMINIUMSWORD = ITEMS.register("aluminium_sword",
             () -> new SwordItem(
-                    ToolMaterial.IRON,
-                    2f,
+                    ToolMaterial.DIAMOND,
+                    4.5f,
                     -2.4f,
-                    new Item.Properties().durability(220).setId(
+                    new Item.Properties().durability(1340).setId(
                     ResourceKey.create(
                             Registries.ITEM,
                             ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_sword")
@@ -89,10 +89,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> ALUMINIUMPICKAXE = ITEMS.register("aluminium_pickaxe",
             () -> new PickaxeItem(
-                    ToolMaterial.IRON,
+                    ToolMaterial.DIAMOND,
                     2.5f,
                     -2.6f,
-                    new Item.Properties().durability(300).setId(
+                    new Item.Properties().durability(1342).setId(
                             ResourceKey.create(
                                     Registries.ITEM,
                                     ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_pickaxe")

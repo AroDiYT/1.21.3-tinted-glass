@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "revampedglass:block/smilepumpkin",
-    "side": "minecraft:block/pumpkin_side",
-    "top": "minecraft:block/pumpkin_top"
-  }
-}
