@@ -26,6 +26,15 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.GLASSPIECE);
                                 output.accept(ModItems.RAWALUMINIUM);
                                 output.accept(ModItems.ALUMINIUMINGOT);
+                            }
+                    ).build());
+
+    public static final Supplier<CreativeModeTab> TINTED_TOOLS = CREATIVE_MODE_TAB.register("tinted_glass_tools_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.RAWALUMINIUM.get()))
+                    .title(Component.translatable("creativetab.revampedglass.tinted_tools"))
+                    .displayItems(
+                            (itemDisplayParameters, output) -> {
                                 output.accept(ModItems.ALUMINIUMSWORD);
                                 output.accept(ModItems.ALUMINIUMPICKAXE);
                             }
