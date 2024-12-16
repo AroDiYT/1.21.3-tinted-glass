@@ -12,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.vanharneveldt.tinted_glass.TintedGlass;
+import org.vanharneveldt.tinted_glass.block.custom.LampBlock;
 import org.vanharneveldt.tinted_glass.item.ModItems;
 
 import java.util.function.Supplier;
@@ -78,7 +79,18 @@ public class ModBlocks {
                     .sound(SoundType.DEEPSLATE)
                     .setId(
                             ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "deepslate_aluminium_ore"))
-                    )));
+                    )
+            )
+    );
+
+    public static final DeferredBlock<Block> ALUMINIUMLAMP = registerBlock("aluminium_lamp", () ->
+            new LampBlock(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.FROGLIGHT)
+                    .requiresCorrectToolForDrops()
+                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_lamp")))
+                    .lightLevel(state -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

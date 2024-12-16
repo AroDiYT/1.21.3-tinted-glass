@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "revampedglass:block/aluminium_lamp_off"
+    },
+    "clicked=true": {
+      "model": "revampedglass:block/aluminium_lamp_on"
+    }
+  }
+}

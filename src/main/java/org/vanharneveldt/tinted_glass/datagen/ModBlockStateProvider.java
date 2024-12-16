@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import org.vanharneveldt.tinted_glass.TintedGlass;
 import org.vanharneveldt.tinted_glass.block.ModBlocks;
+import org.vanharneveldt.tinted_glass.block.custom.LampBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -23,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALUMINIUMORE);
         blockWithItem(ModBlocks.DEEPSLATEALUMINIUMORE);
         blockWithItem(ModBlocks.SMILEPUMPKIN);
+
 
         stairsBlock(ModBlocks.ALUMINIUMCOBBLESTONESTAIRS.get(), blockTexture(ModBlocks.ALUMINIUMCOBBLESTONE.get()));
         blockItem(ModBlocks.ALUMINIUMCOBBLESTONESTAIRS);
@@ -53,34 +55,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
 //        blockItem(ModBlocks.BISMUTH_FENCE_GATE);
 //        blockItem(ModBlocks.BISMUTH_TRAPDOOR, "_bottom");
 //
-//        customLamp();
+        customLamp();
     }
 
-//    private void customLamp() {
-//        getVariantBuilder(ModBlocks.BISMUTH_LAMP.get()).forAllStates(state -> {
-//            if(state.getValue(BismuthLampBlock.CLICKED)) {
-//                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_on",
-//                        ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "bismuth_lamp_on")))};
-//            } else {
-//                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_off",
-//                        ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "bismuth_lamp_off")))};
-//            }
-//        });
-//
-//        simpleBlockItem(ModBlocks.BISMUTH_LAMP.get(), models().cubeAll("bismuth_lamp_on",
-//                ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "bismuth_lamp_on")));
-//    }
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ALUMINIUMLAMP.get()).forAllStates(state -> {
+            if(state.getValue(LampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("aluminium_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "aluminium_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("aluminium_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "aluminium_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.ALUMINIUMLAMP.get(), models().cubeAll("aluminium_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block/" + "aluminium_lamp_on")));
+    }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("tutorialmod:block/" + deferredBlock.getId().getPath()));
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("revampedglass:block/" + deferredBlock.getId().getPath()));
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("tutorialmod:block/" + deferredBlock.getId().getPath() + appendix));
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("revampedglass:block/" + deferredBlock.getId().getPath() + appendix));
     }
 }
 

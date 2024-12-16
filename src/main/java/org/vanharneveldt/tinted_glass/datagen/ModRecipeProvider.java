@@ -44,6 +44,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(ALUMINIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ALUMINIUMINGOT.get(), 0.25f, 100, "aluminium");
 
         oreSmelting(GLASS_SMELTABLES, RecipeCategory.MISC, ModItems.MOLTENGLASS.get(), 0.25f, 200, "glass");
+        oreBlasting(GLASS_SMELTABLES, RecipeCategory.MISC, ModItems.MOLTENGLASS.get(), 0.25f, 100, "glass");
 
 
         shaped(RecipeCategory.MISC, ModItems.GLASSPIECE.get())
@@ -57,12 +58,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .define('#', ModItems.GLASSPIECE.get());
 
-//        shaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK.get())
-//                .pattern("BBB")
-//                .pattern("BBB")
-//                .pattern("BBB")
-//                .define('B', ModItems.BISMUTH.get())
-//                .unlockedBy("has_bismuth", has(ModItems.BISMUTH)).save(this.output);
+        shaped(RecipeCategory.MISC, ModBlocks.ALUMINIUMBLOCK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.ALUMINIUMINGOT.get());
+
 //
 //        shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 9)
 //                .requires(ModBlocks.BISMUTH_BLOCK)

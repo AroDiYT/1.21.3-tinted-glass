@@ -18,6 +18,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.vanharneveldt.tinted_glass.block.ModBlocks;
+import org.vanharneveldt.tinted_glass.component.ModDataComponents;
 import org.vanharneveldt.tinted_glass.item.ModCreativeModeTabs;
 import org.vanharneveldt.tinted_glass.item.ModItems;
 
@@ -47,6 +48,8 @@ public class TintedGlass
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

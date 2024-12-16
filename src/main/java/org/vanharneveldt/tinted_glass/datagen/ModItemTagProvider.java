@@ -26,5 +26,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ALUMINIUMSWORD.get());
         tag(ItemTags.PICKAXES)
                 .add(ModItems.ALUMINIUMPICKAXE.get());
+
+
     }
 }

@@ -38,6 +38,7 @@ public class ModCreativeModeTabs {
                             (itemDisplayParameters, output) -> {
                                 output.accept(ModItems.ALUMINIUMSWORD);
                                 output.accept(ModItems.ALUMINIUMPICKAXE);
+                                output.accept(ModItems.ALUMINIUMHAMMER);
                             }
                     ).build());
 
@@ -54,6 +55,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.ALUMINIUMCOBBLESTONE);
                                 output.accept(ModBlocks.ALUMINIUMBLOCK);
                                 output.accept(ModBlocks.SYLVANNETHERRACKORE);
+                                output.accept(ModBlocks.ALUMINIUMLAMP);
                             }
                     ).build());
 

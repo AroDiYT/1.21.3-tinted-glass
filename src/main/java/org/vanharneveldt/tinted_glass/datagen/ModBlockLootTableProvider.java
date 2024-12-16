@@ -31,6 +31,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SMILEPUMPKIN.get());
         dropSelf(ModBlocks.ALUMINIUMCOBBLESTONESTAIRS.get());
         dropSelf(ModBlocks.ALUMINIUMBLOCK.get());
+        dropSelf(ModBlocks.ALUMINIUMLAMP.get());
 
         add(ModBlocks.ALUMINIUMORE.get(), block -> createMultipleOreDrops(ModBlocks.ALUMINIUMORE.get(), ModItems.RAWALUMINIUM.get(), 1, 3));
 //        add(Blocks.GLASS,block -> createMultipleOreDrops(Blocks.GLASS, ModItems.GLASSSHARDS.get(), 1, 3));

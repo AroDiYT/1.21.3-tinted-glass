@@ -51,6 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         handheldItem(ModItems.ALUMINIUMSWORD.get());
         handheldItem(ModItems.ALUMINIUMPICKAXE.get());
+        handheldItem(ModItems.ALUMINIUMHAMMER.get());
 //        basicItem(ModItems.BISMUTH.get());
 //        basicItem(ModItems.RAW_BISMUTH.get());
 //

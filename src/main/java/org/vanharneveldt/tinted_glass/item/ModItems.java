@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.vanharneveldt.tinted_glass.TintedGlass;
 import org.vanharneveldt.tinted_glass.item.custom.FuelItem;
+import org.vanharneveldt.tinted_glass.item.custom.HammerItem;
 
 
 public class ModItems {
@@ -73,12 +74,12 @@ public class ModItems {
                     )
     ));
 
-    public static final DeferredItem<Item> ALUMINIUMSWORD = ITEMS.register("aluminium_sword",
+    public static final DeferredItem<SwordItem> ALUMINIUMSWORD = ITEMS.register("aluminium_sword",
             () -> new SwordItem(
-                    ToolMaterial.DIAMOND,
+                    ModToolTiers.ALUMINIUM,
                     4.5f,
                     -2.4f,
-                    new Item.Properties().durability(1340).setId(
+                    new SwordItem.Properties().durability(1340).setId(
                     ResourceKey.create(
                             Registries.ITEM,
                             ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_sword")
@@ -87,15 +88,28 @@ public class ModItems {
             ));
 
 
-    public static final DeferredItem<Item> ALUMINIUMPICKAXE = ITEMS.register("aluminium_pickaxe",
+    public static final DeferredItem<PickaxeItem> ALUMINIUMPICKAXE = ITEMS.register("aluminium_pickaxe",
             () -> new PickaxeItem(
-                    ToolMaterial.DIAMOND,
+                    ModToolTiers.ALUMINIUM,
                     2.5f,
                     -2.6f,
-                    new Item.Properties().durability(1342).setId(
+                    new PickaxeItem.Properties().durability(1342).setId(
                             ResourceKey.create(
                                     Registries.ITEM,
                                     ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_pickaxe")
+                            )
+                    )
+            ));
+
+    public static final DeferredItem<HammerItem> ALUMINIUMHAMMER = ITEMS.register("aluminium_hammer",
+            () -> new HammerItem(
+                    ModToolTiers.ALUMINIUM,
+                    7.5f,
+                    -3.2f,
+                    new PickaxeItem.Properties().durability(1342).setId(
+                            ResourceKey.create(
+                                    Registries.ITEM,
+                                    ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_hammer")
                             )
                     )
             ));
