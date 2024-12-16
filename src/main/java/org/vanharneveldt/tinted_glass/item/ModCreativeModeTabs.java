@@ -31,7 +31,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> TINTED_TOOLS = CREATIVE_MODE_TAB.register("tinted_glass_tools_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.ALUMINIUMPICKAXE.get()))
+                    .icon(() -> new ItemStack(ModItems.ALUMINIUMSWORD.get()))
                     .title(Component.translatable("creativetab.revampedglass.tinted_tools"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
