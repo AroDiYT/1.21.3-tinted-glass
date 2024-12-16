@@ -14,6 +14,7 @@ public class ModItems {
     public static final DeferredItem<Item> GLASSPIECE = ITEMS.registerSimpleItem("glasspiece");
     public static final DeferredItem<Item> RAWALUMINIUM = ITEMS.registerSimpleItem("raw_aluminium");
     public static final DeferredItem<Item> ALUMINIUMINGOT = ITEMS.registerSimpleItem("aluminium_ingot");
+    public static final DeferredItem<Item> ALUMINIUMSWORD = ITEMS.registerSimpleItem("aluminium_sword");
 
 
 
