@@ -18,6 +18,15 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TintedGlass.MOD_ID);
 
+    public static final DeferredBlock<Block> ALUMINIUMCOBBLESTONE = registerBlock("aluminium_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .setId(
+                            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_cobblestone"))
+                    )));
+
     public static final DeferredBlock<Block> SMILEPUMPKIN = registerBlock("smilepumpkin",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
