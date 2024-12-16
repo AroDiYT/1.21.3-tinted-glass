@@ -1,9 +1,10 @@
-// 1.21.3	2024-12-16T17:39:01.8402004	Block States: revampedglass
+// 1.21.3	2024-12-16T20:36:39.8487201	Block States: revampedglass
 48d53710867b0898daf41bbc3583f4e3e0b553d9 assets/revampedglass/blockstates/aluminium_block.json
 b3332c6b934398d0dff0125d4449e2f9335a002d assets/revampedglass/blockstates/aluminium_cobblestone.json
 cbeb4357cf0e1719b7930216fa8275a4fa94950b assets/revampedglass/blockstates/aluminium_cobblestone_stairs.json
 0fe496eeb05e47cbe46a21c0aeb023f64994f76f assets/revampedglass/blockstates/aluminium_lamp.json
 a30fc75fe51c68bfa3d53e526ce4a1d682bbd30b assets/revampedglass/blockstates/aluminium_ore.json
+2f4ce042daed0e0cc6ab314b15a09f9b8a28ca5c assets/revampedglass/blockstates/custom.json
 6ccd7244452177ab303c6c93803030c678db3900 assets/revampedglass/blockstates/deepslate_aluminium_ore.json
 482deefe3c26391124c31ca3f89434bd8ea98020 assets/revampedglass/blockstates/smilepumpkin.json
 9b31b05c5a1a67840f0df3e197639a0b1afc6257 assets/revampedglass/blockstates/sylvan_netherrack_ore.json
@@ -23,6 +24,7 @@ cbbf02195c2bbb776337c73d40b0d62ded422c68 assets/revampedglass/models/block/smile
 cf8ada6c2a187d99ed190712f304d3c35e541a0a assets/revampedglass/models/item/aluminium_cobblestone_stairs.json
 547497e8a84d11392c4a3d5e17e1aff433b8aa0e assets/revampedglass/models/item/aluminium_lamp.json
 74c3df60c48320ba04d136c7de8a42c73870bc51 assets/revampedglass/models/item/aluminium_ore.json
+553831791570324d0efd8082556bf024dc031318 assets/revampedglass/models/item/custom.json
 31a574f095ba010bc472e675285e44a563881123 assets/revampedglass/models/item/deepslate_aluminium_ore.json
 8f5b66d87a2e211cc492b33bc140b013684065c8 assets/revampedglass/models/item/smilepumpkin.json
 343c895a2451b5792c4d406691d54f7df628db68 assets/revampedglass/models/item/sylvan_netherrack_ore.json

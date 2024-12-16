@@ -24,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALUMINIUMORE);
         blockWithItem(ModBlocks.DEEPSLATEALUMINIUMORE);
         blockWithItem(ModBlocks.SMILEPUMPKIN);
+        blockWithItemCustom(ModBlocks.CUSTOM, "custom");
 
 
         stairsBlock(ModBlocks.ALUMINIUMCOBBLESTONESTAIRS.get(), blockTexture(ModBlocks.ALUMINIUMCOBBLESTONE.get()));
@@ -75,6 +76,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
+    }
+
+    private void blockWithItemCustom(DeferredBlock<?> deferredBlock, String model) {
+        simpleBlockWithItem(
+                deferredBlock.get(),
+                new ModelFile.ExistingModelFile(
+                        ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, model),
+                        this.models().existingFileHelper
+                )
+        );
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {

@@ -62,6 +62,14 @@ public class ModBlocks {
                     .setId(
                         ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "smilepumpkin"))
                     )));
+    public static final DeferredBlock<Block> CUSTOM = registerBlock("custom",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.GILDED_BLACKSTONE)
+                    .setId(
+                            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "custom"))
+                    )));
 
     public static final DeferredBlock<Block> ALUMINIUMORE = registerBlock("aluminium_ore",
             () -> new Block(BlockBehaviour.Properties.of()

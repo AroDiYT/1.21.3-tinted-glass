@@ -27,6 +27,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.PICKAXES)
                 .add(ModItems.ALUMINIUMPICKAXE.get());
 
-
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ALUMINIUM_HELMET.get())
+                .add(ModItems.ALUMINIUM_CHESTPLATE.get())
+                .add(ModItems.ALUMINIUM_LEGGINGS.get())
+                .add(ModItems.ALUMINIUM_BOOTS.get());
     }
 }

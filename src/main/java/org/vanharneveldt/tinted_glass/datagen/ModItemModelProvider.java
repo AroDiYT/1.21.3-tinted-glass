@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.equipment.trim.TrimMaterial;
+import net.minecraft.world.item.equipment.trim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -14,24 +15,24 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.vanharneveldt.tinted_glass.TintedGlass;
-import org.vanharneveldt.tinted_glass.block.ModBlocks;
 import org.vanharneveldt.tinted_glass.item.ModItems;
+import org.vanharneveldt.tinted_glass.item.custom.ModArmorItem;
 
 import java.util.LinkedHashMap;
 
 public class ModItemModelProvider extends ItemModelProvider {
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
     static {
-//        trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
-//        trimMaterials.put(TrimMaterials.IRON, 0.2F);
-//        trimMaterials.put(TrimMaterials.NETHERITE, 0.3F);
-//        trimMaterials.put(TrimMaterials.REDSTONE, 0.4F);
-//        trimMaterials.put(TrimMaterials.COPPER, 0.5F);
-//        trimMaterials.put(TrimMaterials.GOLD, 0.6F);
-//        trimMaterials.put(TrimMaterials.EMERALD, 0.7F);
-//        trimMaterials.put(TrimMaterials.DIAMOND, 0.8F);
-//        trimMaterials.put(TrimMaterials.LAPIS, 0.9F);
-//        trimMaterials.put(TrimMaterials.AMETHYST, 1.0F);
+        trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
+        trimMaterials.put(TrimMaterials.IRON, 0.2F);
+        trimMaterials.put(TrimMaterials.NETHERITE, 0.3F);
+        trimMaterials.put(TrimMaterials.REDSTONE, 0.4F);
+        trimMaterials.put(TrimMaterials.COPPER, 0.5F);
+        trimMaterials.put(TrimMaterials.GOLD, 0.6F);
+        trimMaterials.put(TrimMaterials.EMERALD, 0.7F);
+        trimMaterials.put(TrimMaterials.DIAMOND, 0.8F);
+        trimMaterials.put(TrimMaterials.LAPIS, 0.9F);
+        trimMaterials.put(TrimMaterials.AMETHYST, 1.0F);
     }
 
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -73,10 +74,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        handheldItem(ModItems.BISMUTH_HOE);
 //        handheldItem(ModItems.BISMUTH_HAMMER);
 //
-//        trimmedArmorItem(ModItems.BISMUTH_HELMET);
-//        trimmedArmorItem(ModItems.BISMUTH_CHESTPLATE);
-//        trimmedArmorItem(ModItems.BISMUTH_LEGGINGS);
-//        trimmedArmorItem(ModItems.BISMUTH_BOOTS);
+        trimmedArmorItem(ModItems.ALUMINIUM_HELMET);
+        trimmedArmorItem(ModItems.ALUMINIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.ALUMINIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.ALUMINIUM_BOOTS);
 //
 //        basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
 //        basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
@@ -84,7 +85,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     // Shoutout to El_Redstoniano for making this
-    private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
+    private void trimmedArmorItem(DeferredItem<ModArmorItem> itemDeferredItem) {
         final String MOD_ID = TintedGlass.MOD_ID; // Change this to your mod id
 
         ArmorItem armorItem = itemDeferredItem.get();

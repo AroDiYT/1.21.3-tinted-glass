@@ -9,6 +9,11 @@
   "item.revampedglass.sylvan_fuel": "Sylvan Fuel",
   "item.revampedglass.aluminium_hammer": "Aluminium Hammer",
 
+  "item.revampedglass.aluminium_helmet": "Aluminium Helmet",
+  "item.revampedglass.aluminium_chestplate": "Aluminium Chestplate",
+  "item.revampedglass.aluminium_leggings": "Aluminium Leggings",
+  "item.revampedglass.aluminium_boots": "Aluminium Boots",
+
   "block.revampedglass.smilepumpkin": "Smiley Pumpkin",
   "block.revampedglass.aluminium_ore": "Aluminium Ore",
   "block.revampedglass.deepslate_aluminium_ore": "Deepslate Aluminium Ore",
@@ -16,6 +21,7 @@
   "block.revampedglass.aluminium_block": "Aluminium Block",
   "block.revampedglass.sylvan_netherrack_ore": "Sylvan Netherrack Ore",
   "block.revampedglass.aluminium_lamp": "Sylvan Netherrack Ore",
+  "block.revampedglass.custom": "Custom",
 
   "creativetab.revampedglass.tinted_items": "RevGlass Items",
   "creativetab.revampedglass.tinted_blocks": "RevGlass Blocks",

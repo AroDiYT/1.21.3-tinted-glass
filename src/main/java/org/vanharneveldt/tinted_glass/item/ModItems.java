@@ -3,16 +3,15 @@ package org.vanharneveldt.tinted_glass.item;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.vanharneveldt.tinted_glass.TintedGlass;
 import org.vanharneveldt.tinted_glass.item.custom.FuelItem;
 import org.vanharneveldt.tinted_glass.item.custom.HammerItem;
+import org.vanharneveldt.tinted_glass.item.custom.ModArmorItem;
 
 
 public class ModItems {
@@ -113,6 +112,18 @@ public class ModItems {
                             )
                     )
             ));
+    public static final DeferredItem<ModArmorItem> ALUMINIUM_HELMET = ITEMS.register("aluminium_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.HELMET,
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_helmet")))));
+    public static final DeferredItem<ModArmorItem> ALUMINIUM_CHESTPLATE = ITEMS.register("aluminium_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.CHESTPLATE,
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_chestplate")))));
+    public static final DeferredItem<ModArmorItem> ALUMINIUM_LEGGINGS = ITEMS.register("aluminium_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.LEGGINGS,
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_leggings")))));
+    public static final DeferredItem<ModArmorItem> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots",
+            () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.BOOTS,
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_boots")))));
 
 
 

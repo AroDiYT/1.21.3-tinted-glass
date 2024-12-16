@@ -1,3 +1,4 @@
-// 1.21.3	2024-12-16T16:26:27.2948971	Tags for minecraft:item mod id revampedglass
+// 1.21.3	2024-12-16T19:43:51.9072004	Tags for minecraft:item mod id revampedglass
 96c333dae11e1fab282acc28233d5279205081b6 data/minecraft/tags/item/pickaxes.json
 15d0b002f8be8950941c4283e1b53acec84cb21f data/minecraft/tags/item/swords.json
+bba7710bc4617a201a72ffc39d9153ba3d3d79ef data/minecraft/tags/item/trimmable_armor.json

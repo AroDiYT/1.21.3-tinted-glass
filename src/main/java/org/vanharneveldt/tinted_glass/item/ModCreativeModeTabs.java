@@ -1,5 +1,6 @@
 package org.vanharneveldt.tinted_glass.item;
 
+import com.ibm.icu.text.Normalizer2;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -39,6 +40,10 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.ALUMINIUMSWORD);
                                 output.accept(ModItems.ALUMINIUMPICKAXE);
                                 output.accept(ModItems.ALUMINIUMHAMMER);
+                                output.accept(ModItems.ALUMINIUM_HELMET);
+                                output.accept(ModItems.ALUMINIUM_CHESTPLATE);
+                                output.accept(ModItems.ALUMINIUM_LEGGINGS);
+                                output.accept(ModItems.ALUMINIUM_BOOTS);
                             }
                     ).build());
 
@@ -56,6 +61,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.ALUMINIUMBLOCK);
                                 output.accept(ModBlocks.SYLVANNETHERRACKORE);
                                 output.accept(ModBlocks.ALUMINIUMLAMP);
+                                output.accept(ModBlocks.CUSTOM);
                             }
                     ).build());
 

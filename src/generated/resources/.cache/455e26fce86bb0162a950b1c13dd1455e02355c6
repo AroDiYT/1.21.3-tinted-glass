@@ -1,5 +1,5 @@
-// 1.21.3	2024-12-16T18:50:55.8876961	Tags for minecraft:block mod id revampedglass
-00fc44c1b416a0caffb9cbe337984bc7668e19ac data/minecraft/tags/block/mineable/axe.json
+// 1.21.3	2024-12-16T20:13:07.3148202	Tags for minecraft:block mod id revampedglass
+624823841fd07bb7c2a51e6148ee783fcba2b56f data/minecraft/tags/block/mineable/axe.json
 97ff3d2a50025935e474db8a4c0dc1b175112d9a data/minecraft/tags/block/mineable/pickaxe.json
 695233e8217e0e36e0aea6b6994c0d636f829ff6 data/minecraft/tags/block/needs_diamond_tool.json
 3e4087dcad855039d9c544ac52b7c7bbcbe95716 data/minecraft/tags/block/needs_iron_tool.json

@@ -50,19 +50,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         shaped(RecipeCategory.MISC, ModItems.GLASSPIECE.get())
                 .pattern("##")
                 .pattern("##")
-                .define('#', ModItems.MOLTENGLASS.get());
+                .define('#', ModItems.MOLTENGLASS.get())
+                .unlockedBy("has_glassshards", has(ModItems.GLASSSHARDS))
+                .save(this.output);
 
         shaped(RecipeCategory.MISC, Blocks.GLASS)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModItems.GLASSPIECE.get());
+                .define('#', ModItems.GLASSPIECE.get())
+                .unlockedBy("has_glasspiece", has(ModItems.GLASSPIECE))
+                .save(this.output);
 
         shaped(RecipeCategory.MISC, ModBlocks.ALUMINIUMBLOCK)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModItems.ALUMINIUMINGOT.get());
+                .define('#', ModItems.ALUMINIUMINGOT.get()).unlockedBy("has_aluminium_ingot", has(ModItems.ALUMINIUMINGOT))
+                .save(this.output);
 
 //
 //        shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 9)

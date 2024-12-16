@@ -38,7 +38,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.SYLVANNETHERRACKORE.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.SMILEPUMPKIN.get());
+                .add(ModBlocks.SMILEPUMPKIN.get())
+                .add(ModBlocks.CUSTOM.get());
 
         tag(ModTags.Blocks.NEEDS_ALUMINIUM_TOOL)
                 .add(ModBlocks.SYLVANNETHERRACKORE.get())
