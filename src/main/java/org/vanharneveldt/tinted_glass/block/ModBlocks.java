@@ -18,9 +18,18 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TintedGlass.MOD_ID);
 
+    public static final DeferredBlock<Block> ALUMINIUMBLOCK = registerBlock("aluminium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.HEAVY_CORE)
+                    .setId(
+                            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_block"))
+                    )));
+
     public static final DeferredBlock<Block> ALUMINIUMCOBBLESTONE = registerBlock("aluminium_cobblestone",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f)
+                    .strength(2f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)
                     .setId(

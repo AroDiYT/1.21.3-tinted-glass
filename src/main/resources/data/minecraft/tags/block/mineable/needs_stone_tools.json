@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "revampedglass:aluminium_cobblestone"
+    "revampedglass:aluminium_cobblestone",
+    "revampedglass:aluminium_block"
   ]
 }
