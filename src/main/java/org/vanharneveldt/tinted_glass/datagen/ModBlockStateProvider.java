@@ -23,7 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALUMINIUMCOBBLESTONE);
         blockWithItem(ModBlocks.ALUMINIUMORE);
         blockWithItem(ModBlocks.DEEPSLATEALUMINIUMORE);
-        blockWithItem(ModBlocks.SMILEPUMPKIN);
+        blockWithItemCustom(ModBlocks.SMILEPUMPKIN, "pumpk");
         blockWithItemCustom(ModBlocks.CUSTOM, "custom");
 
 

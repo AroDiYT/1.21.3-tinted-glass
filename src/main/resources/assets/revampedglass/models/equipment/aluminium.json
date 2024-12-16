@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "revampedglass:aluminium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "revampedglass:aluminium"
+      }
+    ]
+  }
+}

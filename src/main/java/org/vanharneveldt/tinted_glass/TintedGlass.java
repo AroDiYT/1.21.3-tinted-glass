@@ -21,6 +21,7 @@ import org.vanharneveldt.tinted_glass.block.ModBlocks;
 import org.vanharneveldt.tinted_glass.component.ModDataComponents;
 import org.vanharneveldt.tinted_glass.item.ModCreativeModeTabs;
 import org.vanharneveldt.tinted_glass.item.ModItems;
+import org.vanharneveldt.tinted_glass.sound.ModSounds;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TintedGlass.MOD_ID)
@@ -48,6 +49,8 @@ public class TintedGlass
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 

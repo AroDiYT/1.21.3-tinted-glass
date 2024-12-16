@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "revampedglass:aluminium_ingot",
+    "C": "minecraft:diamond"
+  },
+  "pattern": [
+    "BBB",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "revampedglass:aluminium_helmet"
+  }
+}

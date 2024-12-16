@@ -112,16 +112,16 @@ public class ModItems {
                             )
                     )
             ));
-    public static final DeferredItem<ModArmorItem> ALUMINIUM_HELMET = ITEMS.register("aluminium_helmet",
+    public static final DeferredItem<ArmorItem> ALUMINIUM_HELMET = ITEMS.register("aluminium_helmet",
             () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.HELMET,
                     new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_helmet")))));
-    public static final DeferredItem<ModArmorItem> ALUMINIUM_CHESTPLATE = ITEMS.register("aluminium_chestplate",
+    public static final DeferredItem<ArmorItem> ALUMINIUM_CHESTPLATE = ITEMS.register("aluminium_chestplate",
             () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.CHESTPLATE,
                     new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_chestplate")))));
-    public static final DeferredItem<ModArmorItem> ALUMINIUM_LEGGINGS = ITEMS.register("aluminium_leggings",
+    public static final DeferredItem<ArmorItem> ALUMINIUM_LEGGINGS = ITEMS.register("aluminium_leggings",
             () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.LEGGINGS,
                     new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_leggings")))));
-    public static final DeferredItem<ModArmorItem> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots",
+    public static final DeferredItem<ArmorItem> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots",
             () -> new ModArmorItem(ModArmorMaterials.ALUMINIUM_ARMOR_MATERIAL, ArmorType.BOOTS,
                     new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_boots")))));
 

@@ -97,6 +97,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "aluminium_lamp")))
                     .lightLevel(state -> state.getValue(LampBlock.CLICKED) ? 15 : 0)
+
             )
     );
 
@@ -114,3 +115,10 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 }
+/*
+*  public static final DeferredBlock<Block> BLOCK_NAME = registerBlock("block_name",
+    () -> new Block(BlockBehaviour.Properties.of()
+        .setId(
+            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "block_name"))
+     )));
+* */

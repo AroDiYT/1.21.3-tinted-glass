@@ -1,4 +1,4 @@
-// 1.21.3	2024-12-16T19:24:49.8840251	My Recipes
+// 1.21.3	2024-12-16T22:07:01.1389564	My Recipes
 bd8b291ad42c189f0ff67c1f8ddbd49d6d565c4e data/minecraft/advancement/recipes/misc/aluminium_ingot_from_blasting_aluminium_ore.json
 63e72960a01427588b8caf8d0ca92e0815792c30 data/minecraft/advancement/recipes/misc/aluminium_ingot_from_blasting_deepslate_aluminium_ore.json
 c2b74e75a5f51b58190133b0c46faeb95dfffbc8 data/minecraft/advancement/recipes/misc/aluminium_ingot_from_blasting_raw_aluminium.json
@@ -18,6 +18,8 @@ a361d78b069d21bf85f7a1cb4cea702692b575da data/minecraft/recipe/glass.json
 fbd3eec18a143fafab352c2f6fdd4512bd0c1d70 data/minecraft/recipe/moltenglass_from_blasting_glassshards.json
 4ba521dc558fffc5e62f81956a29aff68c6c44ca data/minecraft/recipe/moltenglass_from_smelting_glassshards.json
 3513e15100b1b258a01998b0c5a35605c3b0c7f3 data/revampedglass/advancement/recipes/misc/aluminium_block.json
+ccff0376d28c767b9e479946d41af436178d0554 data/revampedglass/advancement/recipes/misc/aluminium_helmet.json
 60f4cc5b9248a407f9639408e9e0920caafd9a47 data/revampedglass/advancement/recipes/misc/glasspiece.json
 05a6e9cfcdc5f0a7a92405021fbd8c93ba351733 data/revampedglass/recipe/aluminium_block.json
+365b2879ac802a682a16edd76b5db4a57666c45c data/revampedglass/recipe/aluminium_helmet.json
 70c998285535c4a1270029528ec0e03019ce2da5 data/revampedglass/recipe/glasspiece.json

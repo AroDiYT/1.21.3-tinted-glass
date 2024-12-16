@@ -85,7 +85,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     // Shoutout to El_Redstoniano for making this
-    private void trimmedArmorItem(DeferredItem<ModArmorItem> itemDeferredItem) {
+    private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
         final String MOD_ID = TintedGlass.MOD_ID; // Change this to your mod id
 
         ArmorItem armorItem = itemDeferredItem.get();

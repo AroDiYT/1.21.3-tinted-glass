@@ -1,0 +1,8 @@
+{
+  "sword_use": {
+    "subtitle": "sounds.revampedglass.sword_use",
+    "sounds": [
+      "revampedglass:sword_use"
+    ]
+  }
+}

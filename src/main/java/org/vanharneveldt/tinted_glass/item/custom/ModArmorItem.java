@@ -24,11 +24,14 @@ public class ModArmorItem extends ArmorItem {
                             List.of(new MobEffectInstance(MobEffects.JUMP, 200, 1, false, false),
                                     new MobEffectInstance(MobEffects.GLOWING, 200, 1, false, false)))
                     .build();
-
+    private final ArmorMaterial material;
     public ModArmorItem(ArmorMaterial material, ArmorType type, Properties properties) {
         super(material, type, properties);
+        this.material = material;
     }
-
+    public ArmorMaterial getMaterial() {
+        return this.material;
+    }
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if(entity instanceof Player player && !level.isClientSide() && hasFullSuitOfArmorOn(player)) {
@@ -59,20 +62,23 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean hasPlayerCorrectArmorOn(ArmorMaterial mapArmorMaterial, Player player) {
-        for(ItemStack armorStack : player.getArmorSlots()) {
-            if(!(armorStack.getItem() instanceof ArmorItem)) {
-                return false;
+        // Check if each armor slot contains the correct armor item type
+        for (int i = 0; i < 4; i++) {
+            ItemStack armorStack = player.getInventory().getArmor(i);
+            if (!(armorStack.getItem() instanceof ModArmorItem)) {
+                return false; // If any slot doesn't contain armor, return false
+            }
+
+            // Check if the armor piece matches the expected armor material
+            ModArmorItem modArmorItem = (ModArmorItem) armorStack.getItem();
+            if (modArmorItem.getMaterial() != mapArmorMaterial) {
+                return false; // If any armor piece doesn't match, return false
             }
         }
 
-        Equippable equippableComponentBoots = player.getInventory().getArmor(0).getComponents().get(DataComponents.EQUIPPABLE);
-        Equippable equippableComponentLeggings = player.getInventory().getArmor(1).getComponents().get(DataComponents.EQUIPPABLE);
-        Equippable equippableComponentBreastplate = player.getInventory().getArmor(2).getComponents().get(DataComponents.EQUIPPABLE);
-        Equippable equippableComponentHelmet = player.getInventory().getArmor(3).getComponents().get(DataComponents.EQUIPPABLE);
-
-        return equippableComponentBoots.model().equals(mapArmorMaterial.modelId()) && equippableComponentLeggings.model().equals(mapArmorMaterial.modelId()) &&
-                equippableComponentBreastplate.model().equals(mapArmorMaterial.modelId()) && equippableComponentHelmet.model().equals(mapArmorMaterial.modelId());
+        return true; // All armor pieces match
     }
+
 
     private boolean hasFullSuitOfArmorOn(Player player) {
         ItemStack boots = player.getInventory().getArmor(0);

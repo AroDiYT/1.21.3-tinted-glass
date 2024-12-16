@@ -3,6 +3,7 @@ package org.vanharneveldt.tinted_glass.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -69,6 +70,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.ALUMINIUMINGOT.get()).unlockedBy("has_aluminium_ingot", has(ModItems.ALUMINIUMINGOT))
                 .save(this.output);
 
+        shaped(RecipeCategory.MISC, ModItems.ALUMINIUM_HELMET)
+                .pattern("BBB")
+                .pattern("BCB")
+                .define('B', ModItems.ALUMINIUMINGOT.get())
+                .define('C', Items.DIAMOND)
+                .unlockedBy("has_aluminium_ingot", has(ModItems.ALUMINIUMINGOT))
+                .save(this.output);
 //
 //        shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 9)
 //                .requires(ModBlocks.BISMUTH_BLOCK)
