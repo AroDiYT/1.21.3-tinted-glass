@@ -11,7 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.vanharneveldt.tinted_glass.TintedGlass;
-
+import org.vanharneveldt.tinted_glass.item.custom.FuelItem;
 
 
 public class ModItems {
@@ -27,6 +27,14 @@ public class ModItems {
                                     )
                             )
             )
+    );
+    public static final DeferredItem<Item> SYLVANFUEL = ITEMS.register("sylvan_fuel",
+            () -> new FuelItem(new Item.Properties().setId(
+                    ResourceKey.create(
+                            Registries.ITEM,
+                            ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "sylvan_fuel")
+                    )
+            ), 1450)
     );
     public static final DeferredItem<Item> MOLTENGLASS = ITEMS.register("moltenglass", () -> new Item(
             new Item.Properties()
@@ -68,8 +76,8 @@ public class ModItems {
     public static final DeferredItem<Item> ALUMINIUMSWORD = ITEMS.register("aluminium_sword",
             () -> new SwordItem(
                     ToolMaterial.IRON,
-                    2.3f,
-                    -1.2f,
+                    2f,
+                    -2.4f,
                     new Item.Properties().durability(220).setId(
                     ResourceKey.create(
                             Registries.ITEM,
@@ -82,8 +90,8 @@ public class ModItems {
     public static final DeferredItem<Item> ALUMINIUMPICKAXE = ITEMS.register("aluminium_pickaxe",
             () -> new PickaxeItem(
                     ToolMaterial.IRON,
-                    1.2f,
-                    -1.2f,
+                    2.5f,
+                    -2.6f,
                     new Item.Properties().durability(300).setId(
                             ResourceKey.create(
                                     Registries.ITEM,

@@ -44,6 +44,7 @@ public class ModBlocks {
                     .setId(
                         ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "smilepumpkin"))
                     )));
+
     public static final DeferredBlock<Block> ALUMINIUMORE = registerBlock("aluminium_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f)

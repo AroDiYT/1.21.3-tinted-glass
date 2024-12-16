@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.GLASSPIECE);
                                 output.accept(ModItems.RAWALUMINIUM);
                                 output.accept(ModItems.ALUMINIUMINGOT);
+                                output.accept(ModItems.SYLVANFUEL);
                             }
                     ).build());
 
