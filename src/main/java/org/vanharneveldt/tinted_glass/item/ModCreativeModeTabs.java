@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.RAWALUMINIUM);
                                 output.accept(ModItems.ALUMINIUMINGOT);
                                 output.accept(ModItems.ALUMINIUMSWORD);
+                                output.accept(ModItems.ALUMINIUMPICKAXE);
                             }
                     ).build());
 
