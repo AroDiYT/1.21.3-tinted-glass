@@ -67,6 +67,7 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GILDED_BLACKSTONE)
+                    .noOcclusion()
                     .setId(
                             ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "custom"))
                     )));

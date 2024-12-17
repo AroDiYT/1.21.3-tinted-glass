@@ -25,5 +25,16 @@
 
   "creativetab.revampedglass.tinted_items": "RevGlass Items",
   "creativetab.revampedglass.tinted_blocks": "RevGlass Blocks",
-  "creativetab.revampedglass.tinted_tools": "RevGlass Tools"
+  "creativetab.revampedglass.tinted_tools": "RevGlass Tools",
+
+  "effect.revampedglass.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "painting.revampedglass.world.title": "World",
+  "painting.revampedglass.world.Author": "NanoAttack",
+
+  "enchantment.revampedglass.lightning_striker": "Lightning Striker"
 }

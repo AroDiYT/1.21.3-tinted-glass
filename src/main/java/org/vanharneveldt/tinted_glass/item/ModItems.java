@@ -34,7 +34,7 @@ public class ModItems {
                             Registries.ITEM,
                             ResourceLocation.fromNamespaceAndPath(TintedGlass.MOD_ID, "sylvan_fuel")
                     )
-            ), 1450)
+            ), 2350)
     );
     public static final DeferredItem<Item> MOLTENGLASS = ITEMS.register("moltenglass", () -> new Item(
             new Item.Properties()

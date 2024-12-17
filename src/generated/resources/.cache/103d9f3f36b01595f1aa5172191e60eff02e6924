@@ -1,1 +1,8 @@
-// 1.21.3	2024-12-16T16:26:27.2958974	Registries
+// 1.21.3	2024-12-17T15:39:10.0940364	Registries
+cf9f6025651905a499a7675c51cd2d9f836a89d2 data/revampedglass/enchantment/lightning_striker.json
+5a9d61683faad3dc293e88e389cfd0c190426629 data/revampedglass/neoforge/biome_modifier/add_aluminium_ore.json
+c860c070e60a5643bec389eedfcc69d8a2ba0432 data/revampedglass/neoforge/biome_modifier/add_nether_sylvan_ore.json
+ad8ad997285de13a723724d8154631b1f19134e4 data/revampedglass/worldgen/configured_feature/aluminium_ore.json
+927bdb4a61228aa2d0f08e84d7bc14e267a28bc8 data/revampedglass/worldgen/configured_feature/nether_sylvan_ore.json
+b0a68e02b6a6abafd5fba0bf5ceeb2137d423546 data/revampedglass/worldgen/placed_feature/aluminium_ore_placed.json
+d8b408e772b6e8d2e7e282201f0f3f170d370769 data/revampedglass/worldgen/placed_feature/nether_sylvan_ore_placed.json

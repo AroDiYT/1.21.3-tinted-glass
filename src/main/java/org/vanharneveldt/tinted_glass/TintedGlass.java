@@ -19,8 +19,12 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.vanharneveldt.tinted_glass.block.ModBlocks;
 import org.vanharneveldt.tinted_glass.component.ModDataComponents;
+import org.vanharneveldt.tinted_glass.effect.ModEffects;
+import org.vanharneveldt.tinted_glass.enchantment.ModEnchantmentEffects;
+import org.vanharneveldt.tinted_glass.enchantment.ModEnchantments;
 import org.vanharneveldt.tinted_glass.item.ModCreativeModeTabs;
 import org.vanharneveldt.tinted_glass.item.ModItems;
+import org.vanharneveldt.tinted_glass.potion.ModPotions;
 import org.vanharneveldt.tinted_glass.sound.ModSounds;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -49,6 +53,11 @@ public class TintedGlass
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
         ModSounds.register(modEventBus);
 
@@ -81,12 +90,10 @@ public class TintedGlass
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+//            ModItemProperties.addCustomItemProperties();
         }
     }
 }
