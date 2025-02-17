@@ -11,7 +11,9 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.vanharneveldt.tinted_glass.TintedGlass;
+import org.vanharneveldt.tinted_glass.command.DimensionListCommand;
 import org.vanharneveldt.tinted_glass.item.custom.HammerItem;
 import org.vanharneveldt.tinted_glass.potion.ModPotions;
 
@@ -52,5 +54,10 @@ public class ModEvents {
         PotionBrewing.Builder builder = event.getBuilder();
 
         builder.addMix(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
+    }
+
+    @SubscribeEvent
+    public static void onServerStarting(ServerStartingEvent event) {
+        DimensionListCommand.register(event.getServer().getCommands().getDispatcher());
     }
 }
